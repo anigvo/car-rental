@@ -1,0 +1,83 @@
+@import-normalize; /* bring in normalize.css styles */
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Manrope-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Manrope-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Manrope-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-SemiBold.woff2') format('woff2'),
+    url('./assets/fonts/Manrope-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+
+p, h1, h2, h3, h3, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 400ms ease-in-out, transform 400ms ease-in-out;
+}

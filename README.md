@@ -1,24 +1,27 @@
-# GooseTrack
+# Car Rental
 
-GooseTrack is a unique app for effectively scheduling your time. You will be
-able to record tasks and prioritize them, conveniently navigate through dates
-with calendar and period selection.
+Application for car rental in Ukraine. The application consists of 3 pages:
+Home, Catalog, Favorites.
 
-## Calendar view
+## Home
 
-GooseTrack's Calendar view provides a comprehensive overview of your schedule,
-displaying all your tasks, events, and appointments in a visually appealing and
-intuitive layout.
+The Home page contains description and conditions of car rental, as well as
+cities available for rent.
 
-## Sidebar
+## Catalog
 
-GooseTrack offers easy access to your account settings, calendar, and filters.
-The "My Account" section allows you to manage your profile information and
-preferences, while the calendar provides a quick and convenient way to view your
-upcoming events and tasks.
+The Catalog page renders the list of cars that come from the backend. To view a
+car in detail, you can click on the button and open a modal window with detailed
+information about the car. Each car in the list can be added to favorites.
 
-## All in one
+## Favorites
 
-GooseTrack is an all-in-one productivity tool that helps you stay on top of your
-tasks, events, and deadlines. Say goodbye to scattered to-do lists and hello to
-streamlined productivity with GooseTrack.
+Favorites page displays favorite cars.
+
+### Technology
+
+The application is written with React. The data in the local storage (favorite
+cars) is saved using Redux. Modal windows are created by portals using
+react-modal.
+
+#### Link to the live page: https://anigvo.github.io/car-rental/
